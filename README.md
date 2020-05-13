@@ -8,6 +8,10 @@ pip install pylint==2.4.4
 ```
 
 ##快速使用
+```bash
+git clone https://github.com/Nostalgiaaa/foreman_pylint.git
+```
+
 创建rule（参考  examples/func_name_rule.py, orm_rule.py）
 ```python
 from flint import Rule
