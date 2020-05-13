@@ -1,0 +1,2 @@
+class ErrorCodeNotValid(Exception):
+    pass
