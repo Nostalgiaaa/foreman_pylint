@@ -2,12 +2,12 @@
 
 快速开发pylint插件，来实现自定义的公司或个人代码规范
 
-##依赖
+## 依赖
 ```bash
 pip install pylint==2.4.4
 ```
 
-##快速使用
+## 快速使用
 ```bash
 git clone https://github.com/Nostalgiaaa/foreman_pylint.git
 ```
@@ -81,7 +81,7 @@ examples/code.py:24:4: W0003: 不可以声明_tmp变量 (assign_bad_name)
 Your code has been rated at -7.69/10
 
 ```
-##开发插件细节
+## 开发插件细节
 基于pylint开发
 
 msg定义:
@@ -118,7 +118,7 @@ Module(body=[
 ```
 找到对应的类型，定义visit_call即可访问该节点。具体使用可以看 examples
 
-##搭配工具
+## 搭配工具
 [pre-commit](https://pre-commit.com/) 通过 pre-commit 每次commit都按照公司代码规范检查
 
 [travis-ci](https://travis-ci.org/) 集成到ci中，减少review工作量。
